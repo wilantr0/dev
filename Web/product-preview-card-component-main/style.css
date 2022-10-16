@@ -1,0 +1,40 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.chart{
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 100px;
+    margin-left: 500px;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.product{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.description{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.current{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.older{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+}
+.cart{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+
+}
