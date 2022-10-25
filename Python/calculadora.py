@@ -76,77 +76,76 @@ def validation(range):
 
 def options(num1, num2):
     op = input("""
-    Indica quina operació vols realitzar?\n
-    S/s || Suma\n
-    R/r || Resta\n
-    M/m || Multiplicació\n
-    D/d || Divisió\n
-    E/e || Exponent\n
-    A/a || Arrel quadrada\n
+    Indica quina operació vols realitzar?
+    S/s || Suma
+    R/r || Resta
+    M/m || Multiplicació
+    D/d || Divisió
+    E/e || Exponent
+    A/a || Arrel quadrada
 
     """)
 
     op = op.lower()
 
     if op == "s":
-        print(f"La suma de {num1}+{num2} és: {int(num1)+int(num2)}")
+        print(f"La suma de {num1}+{num2} és: {float(num1)+float(num2)}")
 
     elif op == "r":
-        print(f"La resta de {num1}-{num2} és: {int(num1)-int(num2)}")
+        print(f"La resta de {num1}-{num2} és: {float(num1)-float(num2)}")
 
     elif op == "m":
-        print(f"La multiplicació de {num1}*{num2} és: {int(num1)*int(num2)}")
+        print(f"La multiplicació de {num1}*{num2} és: {float(num1)*float(num2)}")
 
     elif op == "d":
-        print(f"La divisió de {num1}/{num2} és: {int(num1)/int(num2)}")
+        print(f"La divisió de {num1}/{num2} és: {float(num1)/float(num2)}")
 
     elif op == "e":
-        print(f"El resultat de {num1}**{num2} és: {int(num1)**int(num2)}")
+        print(f"El resultat de {num1}**{num2} és: {float(num1)**float(num2)}")
 
     elif op == "a":
-        print(f"La arrel quadrada de {num1} i de {num2} és: {int(num1)**0.5} i {int(num2)**0.5}")
+        print(f"La arrel quadrada de {num1} i de {num2} és: {float(num1)**0.5} i {float(num2)**0.5}")
 
     else:
         print("Ho sento aquesta opció no és correcta")
 
 
-def options1(num3, num4):
     while True:
         op = input("""
-        Indica quina operació vols realitzar?\n
-        S/s || Suma\n
-        R/r || Resta\n
-        M/m || Multiplicació\n
-        D/d || Divisió\n
-        E/e || Exponent\n
-        A/a || Arrel quadrada\n
+        Indica quina operació vols realitzar?
+        S/s || Suma
+        R/r || Resta
+        M/m || Multiplicació
+        D/d || Divisió
+        E/e || Exponent
+        A/a || Arrel quadrada
 
         """)
 
         op = op.lower()
 
         if op == "s":
-            print(f"La suma de {num3}+{num4} és: {int(num3)+int(num4)}")
+            print(f"La suma de {num3}+{num4} és: {float(num3)+float(num4)}")
             break
 
         elif op == "r":
-            print(f"La resta de {num3}-{num4} és: {int(num3)-int(num4)}")
+            print(f"La resta de {num3}-{num4} és: {float(num3)-float(num4)}")
             break
 
         elif op == "m":
-            print(f"La multiplicació de {num3}*{num4} és: {int(num3)*int(num4)}")
+            print(f"La multiplicació de {num3}*{num4} és: {float(num3)*float(num4)}")
             break
 
         elif op == "d":
-            print(f"La divisió de {num3}/{num4} és: {int(num3)/int(num4)}")
+            print(f"La divisió de {num3}/{num4} és: {float(num3)/float(num4)}")
             break
 
         elif op == "e":
-            print(f"El resultat de {num3}**{num4} és: {int(num3)**int(num4)}")
+            print(f"El resultat de {num3}**{num4} és: {float(num3)**float(num4)}")
             break
 
         elif op == "a":
-            print(f"La arrel quadrada de {num3} i de {num4} és: {int(num3)**0.5} i {int(num4)**0.5}")
+            print(f"La arrel quadrada de {num3} i de {num4} és: {float(num3)**0.5} i {float(num4)**0.5}")
             break
 
         else:
@@ -154,17 +153,23 @@ def options1(num3, num4):
             continue
         
 while True:
+    print("""
+    |------------------------------|
+       Benvingut a la calculadora
+    |------------------------------|
+    """)
+    time.sleep(1)
     print()
     num1 = input("Introdueix el primer nombre: ")
     num2 = input("Introdueix el segon nombre: ")
 
     options(num1, num2)
-    
-
+    print()
+    time.sleep(1)
     num3 = input("Introdueix el tercer nombre: ")
     num4 = input("Introdueix el quart nombre: ")
 
-    options1(num3, num4)
+    options(num3, num4)
 
     nums = [num1, num2, num3, num4]
     validation(nums)
