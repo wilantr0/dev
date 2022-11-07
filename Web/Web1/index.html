@@ -2,16 +2,26 @@
 <html>
 <head>    
     <link rel="stylesheet" href="style.css">
-    <title>Mi web</title>
+    <title>To do list</title>
 </head>
 <body>
+    <h1>To do List</h1>
 
-    <fieldset>
-        <legend id="fecha"></legend>
-        <h2 id="reloj"></h2>
-    </fieldset>
+    <form action="#" id="userInput">
+        <input type="text" placeholder="Escribe tu tarea aquí..." autofocus>
+        <input type="submit" value="+" id="addBtn">
+    </form>
 
-     <script src="./script.js"></script>
-     <script src="./reloj.js"></script>
+    <div id="list" class="list-container">
+        <div class="task-container" id="1">
+            <label>
+                <input type="checkbox">
+                Tarea 1
+            </label>
+            <img src="./img/delete.png" class="closeBtn">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
