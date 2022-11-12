@@ -1,17 +1,728 @@
-cumpleaños = input("Introdueix el teu aniversari amb aquest format, dd/m ").split('/')
-cumpleaños1 = input("Introdueix l'aniversari d'un amic amb aquest format, dd/m ").split('/')
-cumpleaños2 = input("Introdueix l'aniversari d'un altre amic amb aquest format, dd/m ").split('/')
+users = """usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
 
-if cumpleaños[1] > cumpleaños1[1] and cumpleaños[1] > cumpleaños2[1]:
-    print('Mateu és el més gran')
-    
-elif cumpleaños1[1] > cumpleaños[1] and cumpleaños1[1]>cumpleaños2[1]:
-    print('Guillermo és el més gran')
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
 
-elif cumpleaños2[1] > cumpleaños[1] and cumpleaños2[1]>cumpleaños1[1]:
-    print('Carles és el més gran')
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
 
-elif cumpleaños[1] == cumpleaños1[1] or cumpleaños[1] == cumpleaños2[1] or cumpleaños1[1] == cumpleaños2[1]:
-    print('Hi ha dos que són del mateix més')
-else:
-    print('Sabia que arribarieu a trencar-me el codi')
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:World
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com
+
+usr:@itziar age:19
+loc:isle psw:aaa fll:222
+eme:itzi@gmail.com
+
+usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
+
+fll:111 eme:yrfa@gmail.com usr:@codember
+psw:123456 age:21 loc:WorldCC
+usr:@giroz age:22 src:12 icon:avatar.png terminal:yes
+pages:server
+pages:blog
+blog:about
+loc:tierra psw:aaa fll:222
+eme:giroz@gmail.com
+
+psw:11133 loc:Canary
+fll:333 usr:@pheralb
+eme:pheralb@gmail.com""".split("""
+
+""")
+
+
+result = []
+for item in users:
+    if item != '' or item != '\n':
+        result.append(item)
+        
+
+print(result)
