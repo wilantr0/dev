@@ -5,7 +5,7 @@ coords_y = [0]
 stop = int(input('How many stops do you want to do? \n'))
 
 for i in range(stop):
-    coord_x, coord_y = input('').split(' ')
+    coord_x, coord_y = input('Coords').split(' ')
     coords_x.append(int(coord_x))
     coords_y.append(int(coord_y))
 
