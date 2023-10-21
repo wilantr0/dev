@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #f06291, #fffde7);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #bb8282;
+  background-color: #fff;
+}
+.calculator #display {
+  color: #0a1e23;
+  display: block;
+  height: 80px;
+  max-width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #d2d2d2;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 50px;
+}
+.calculator #clear {
+  background-color: #ffd5d8;
+  color: #fc4552;
+}
+.calculator .btn-number {
+  background-color: #c3eaff;
+  color: #000000;
+}
+.calculator .btn-operator {
+  background-color: #ffd0fb;
+  color: #f967f3;
+}
+.calculator .btn-equal {
+  background-color: #adf9e7;
+  color: #000000;
+  height: 130px;
+  border-radius: 30px;
+}
+.calculator.dark {
+  background-color: #1b1b1b;
+}
+.calculator.dark #display {
+  color: #f8fafb;
+  background-color: #333;
+}
+.calculator.dark #clear {
+  background-color: #4c35aa;
+  color: #fff;
+}
+.calculator.dark .btn-number {
+  background-color: #8efda6;
+  color: #000000;
+}
+.calculator.dark .btn-operator {
+  background-color: #f0db4f;
+  color: #aa00a4;
+}
+.calculator.dark .btn-equal {
+  background-color: #f23b00;
+  color: #fff;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+.theme-toggler::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -10;
+}
+
+.theme-toggler.active {
+  color: #333;
+}
+.theme-toggler.active::before {
+  background-color: #fff;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+span {
+  margin: 10px 10px;
+}/*# sourceMappingURL=style.css.map */

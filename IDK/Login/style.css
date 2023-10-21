@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+div{
+  width: 120px;
+  height: 120px;
+  display: block;
+  font-size: 30px;
+}
+
+.caja1{
+    background-color:orange ;
+}
+
+.caja2{
+  background-color:greenyellow;
+  position: relative;
+  top: 20px;
+}
+
+.caja3{
+  background-color: lightblue ;
+}
+
+.caja4{
+  background-color:yellow ;
+}

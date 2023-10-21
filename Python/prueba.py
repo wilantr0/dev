@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 users = """usr:@midudev eme:mi@gmail.com psw:123456 age:38 loc:bcn fll:82
 
 fll:111 eme:yrfa@gmail.com usr:@codember
@@ -726,3 +727,9 @@ for item in users:
         
 
 print(result)
+=======
+sel = [1, 7, 3]
+
+sel = sel.sort()
+print(sel)
+>>>>>>> 4e65329 (todo OK)

@@ -1,0 +1,157 @@
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightgoldenrodyellow;
+}
+
+.form-container{
+  background-color: #f6f6f6;
+  width: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container .login-container{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form-container .login-container .logo{
+  display: flex;
+  width: 300px;
+  margin: auto;
+}
+
+.form-container .login-container > h1{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.form-container .login-container > p{
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.form-container .login-container > p,
+.form-container .login-container > span{
+  text-align: center;
+  color: #555;
+}
+
+.form-container .login-container label{
+  display: block;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.form-container .login-container input.info{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: solid 2px #ccc;
+  border-radius: 5px;
+}
+
+.form-container .login-container input.info:focus{
+  outline: solid 4px #d2d2ab;
+}
+
+.form-container .login-container .options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.form-container .login-container .options a{
+  color: #8d8d65;
+  text-decoration: none;
+}
+
+.form-container .login-container .options a:hover{
+  text-decoration: underline;
+}
+
+.form-container .login-container .providers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn{
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: bold;
+  display: block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn.btn-login{
+  background-color: black;
+  color: #f6f6f6;
+}
+
+.btn.btn-login:hover{
+  background-color: #444;
+  color: white;
+}
+
+.btn.btn-google,
+.btn.btn-github{
+  width: 50%;
+  background-color: white;
+  border: solid 1px #d2d2ab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.btn.btn-google img,
+.btn.btn-github img
+{
+  width: 30px;
+}
+
+.form-container a{
+  color: #8d8d65;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-container a:hover{
+  text-decoration: underline;
+}
+
+.form-container .welcome-screen-container{
+  background: url(./img/cami.jpg);
+  height: 100%;
+  width: 35%;
+  background-repeat: no-repeat;
+  background-size: 300%;
+
+  background-position-y: center;
+  background-position-x: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .form-container .welcome-screen-container{
+    display: none;
+  }
+}
