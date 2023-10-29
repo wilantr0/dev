@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Calculadora Curso Javascript</h1>
+
+  <h2>Por Wilantr0</h2>
+
+  <div class="calculator">
+    <div class="display" id="display">
+
+    </div>
+    <table>
+      <tr>
+        <td><button onclick="agregar('1')" class="number" id="1">1</button></td>
+        <td><button onclick="agregar('2')" class="number" id="2">2</button></td>
+        <td><button onclick="agregar('3')" class="number" id="3">3</button></td>
+        <td><button onclick="agregar('+')" class="operator" id="plus">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="agregar('4')" class="number" id="4">4</button></td>
+        <td><button onclick="agregar('5')" class="number" id="5">5</button></td>
+        <td><button onclick="agregar('6')" class="number" id="6">6</button></td>
+        <td><button onclick="agregar('-')" class="operator" id="less">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="agregar('7')" class="number" id="7">7</button></td>
+        <td><button onclick="agregar('8')" class="number" id="8">8</button></td>
+        <td><button onclick="agregar('9')" class="number" id="9">9</button></td>
+        <td><button onclick="agregar('*')" class="operator" id="multiply">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="agregar('0')" class="number" id="0">0</button></td>
+        <td><button onclick="agregar('.')" class="operator" id="decimal">.</button></td>
+        <td><button onclick="borrar()" class="operator" id="AC">AC</button></td>
+        <td><button onclick="agregar('/')" class="operator" id="divide">/</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="calcular()" class="operator" id="equal"> =</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

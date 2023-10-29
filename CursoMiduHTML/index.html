@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"> -->
   <title>Document</title>
-  <meta name="theme-color" content="#09f">
   <meta property="og:title" content="2 años de experiencia como Desarrollador de Software.">
   <meta property="og:description" content="Consumidor de drogas duras">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/78095105?v=4">
@@ -15,142 +15,146 @@
   <link rel="alternate" href="https://midu.dev/en" hreflang="en-GB">
   <link rel="canonical" href="https://midu.dev">
 
-  <style>
-    body {
-      font-family: Verdana;
-      background-color: #ffffff;
-    }
-  </style>
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#09f">
+
+
 </head>
 
 <body>
-  <header>
-    <h1>Portfolio de Wilantr0</h1>
+  <header id="nav-header">
+    <span class="name-logo">
+      @ Wilantr0
+    </span>
+    <span>
+      <a class="link" href="#proyectos">Proyectos</a>
+      <a class="link" href="#about">Sobre mi</a>
+      <a class="link" href="#Q&A">Q&A</a>
+      <a class="link" href="#contacto">Contacto</a>
+    </span>
 
-    <iframe src="https://widgetbox.app/embed/calendar/simple/fZztcLu7oXpzvXCivghpGn?flag=true" frameborder="0"
-      style="aspect-ratio: 16/9; width: 50%;"></iframe>
-    <nav>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="https://www.twitch.tv" target="_blank" rel="noreferrer">Twitch</a>
-    </nav>
   </header>
 
-  <main>
-    <p>2 años de experiencia como <strong>Desarrollador de Software</strong>. Consumidor de drogas duras</p>
 
-    <h2 id="experiencia">Experiencia</h2>
-    <ul>
-      <li>CodeWars - 2023</li>
-      <li>Robolot - 2023</li>
-      <li>BigData - 2023</li>
-      <li>MALFARCHAUS - 2023</li>
-    </ul>
-    <img style="border-radius:50%;" width="200" height="200" src="./img/yo.jpg" title="Foto de Wilantr0">
+
+  <main>
+    <div class="presentation">
+      <div class="left-present">
+        <h1><strong>Desarrollador de Software</strong>. Consumidor de drogas duras</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <button onclick="location.href='#contacto'">Contact me</button>
+      </div>
+      <div class="right-present">
+        <img id="logo-photo" src="./img/yo-removebg-preview.png" alt="Foto de Wilantr0">
+        <span id="current"><i>🕹️</i>Currently working on <a href="https://github.com/Wilantr0/TIC-E" target="_blank"
+            class="bold">Portfolio</a>
+      </div>
+    </div>
 
     <h2 id="proyectos">Proyectos realizados</h2>
-
-    <aside>
-      <header>
-        <h3>Mis tecnologias favoritas</h3>
-      </header>
-      <ul>
-        <li>HTML</li>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>Node.js</li>
-      </ul>
-    </aside>
-
     <section id="proyectosR">
       <article>
         <header>
+          <img src="./img/corp.png" alt="">
           <h4>Sitio Web Corporativo</h4>
         </header>
+        <hr>
         <p>Desarrollo de un sitio web corporativo con una interfaz amigable y moderna</p>
         <footer>
-          <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small>
+          <small>HTML, CSS, JavaScript</small>
         </footer>
       </article>
       <article>
         <header>
+          <img src="./img/web e-com.png" alt="">
           <h4>Aplicación Web E-commerce</h4>
         </header>
+        <hr>
         <p>Creació de una plataforma de comercio electrónico para una tienda local</p>
         <footer>
-          <small>Tecnologias utilizadas: React, Node.js, MongoDB</small>
+          <small>React, Node.js, MongoDB</small>
         </footer>
       </article>
       <article>
         <header>
+          <img src="./img/strava000.jpg" alt="">
           <h4>Aplicación Móvil de Rastreo de Fitness</h4>
         </header>
+        <hr>
         <p>Desarrollo de una aplicación móvil para rastear actividades físicas y hábitos de alimentación</p>
         <footer>
-          <small>Tecnologias utilizadas: Flutter, Firebase</small>
+          <small>Flutter, Firebase</small>
         </footer>
       </article>
     </section>
 
-    <section id="q&a">
-      <h2>Preguntas frecuentes</h2>
+    <section id="qa">
+      <article id="preguntas">
+        <h2>Preguntas frecuentes</h2>
 
-      <details>
-        <summary>Que estudios tienes?</summary>
-        <span
-          style="background-color: antiquewhite; border-radius: 10px;padding: 10px; margin-top: 3px; margin-left: 25px; display: inline-block;">
-          Tengo estudios en Ingenieria Informatica en la FIB</span>
-      </details>
+        <details>
+          <summary>Que estudios tienes?</summary>
+          <span>
+            Tengo estudios en Ingenieria Informatica en la FIB</span>
+        </details>
 
-      <details>
-        <summary>Cuales son tus hobbies?</summary>
-        <span
-          style="background-color: antiquewhite; border-radius: 10px;padding: 10px; margin-top: 3px; margin-left: 25px; display: inline-block;">
-          Me gusta mucho la música, sobre todo tocar la guitarra, asi como el diseño 3D</>
-      </details>
+        <details>
+          <summary>Cuales son tus hobbies?</summary>
+          <span>
+            Me gusta mucho la música, sobre todo tocar la guitarra, asi como el diseño 3D</>
+        </details>
 
-      <details>
-        <summary>Cual es tu lenguaje favorito?</summary>
-        <span
-          style="background-color: antiquewhite; border-radius: 10px;padding: 10px; margin-top: 3px; margin-left: 25px; display: inline-block;">
-          Mi lenguaje favorito es JavaScript, ya que me parece un lenguaje sencillo pero muy completo y versatil
-        </span>
+        <details>
+          <summary>Cual es tu lenguaje favorito?</summary>
+          <span>
+            Mi lenguaje favorito es JavaScript, ya que me parece un lenguaje sencillo pero muy completo y versatil
+          </span>
 
-      </details>
-    </section>
+        </details>
+      </article>
 
-    <section id="contacto">
-      <h2>Formulario de contacto</h2>
+      <section id="contacto">
+        <h2>Formulario de contacto</h2>
 
-      <form action="post" action="/">
-        <fieldset>
-          <legend>Información personal</legend>
-          <div>
-            <label>Nombre:
-              <input required type="text" name="name" placeholder="Guillermo Ballarín">
-            </label>
-          </div>
-          <div>
-            <label>Email:
-              <input required type="email" name="email" placeholder="example@domain.com">
-            </label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Información Adicional</legend>
-          <div>
-            <label>Email:
-              <input required type="tel" name="tel" placeholder="+19999999">
-            </label>
-          </div>
-        </fieldset>
-        <input type="submit" value="Enviar contacto">
-      </form>
-    </section>
+        <form action="post" action="/">
+          <fieldset>
+            <legend>Información personal</legend>
+            <div>
+              <label>Nombre:
+                <input required type="text" name="name" placeholder="Guillermo Ballarín">
+              </label>
+            </div>
+            <div>
+              <label>Email:
+                <input required type="email" name="email" placeholder="example@domain.com">
+              </label>
+            </div>
+            <div>
+              <label>Mensaje:
+                <input required type="text" name="message" placeholder="Mensaje">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Información Adicional</legend>
+            <div>
+              <label>Email:
+                <input required type="tel" name="tel" placeholder="+19999999">
+              </label>
+            </div>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
   </main>
+  </section>
 
-  <footer>
-    Copyright 2023 - El Portfolio más bonito del mundo
+
+
+  <footer id="footer-page">
+    <span>&#169;</span> Copyright 2023 - El Portfolio más bonito del mundo
   </footer>
 
 </body>

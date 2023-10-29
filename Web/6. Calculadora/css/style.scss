@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 body{
@@ -109,7 +110,6 @@ body{
     
   }
 }
-
 .theme-toggler.active{
   color: #333;
   &::before{

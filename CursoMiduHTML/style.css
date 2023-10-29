@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+body {
+  background-color: #282c33;
+  font-family: "fira code";
+  color: #fff;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.bold {
+  font-weight: bolder;
+  color: #c778dd;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #a2a2a2;
+}
+
+#show {
+  background-color: #09f;
+  color: white;
+  border: 0;
+}
+
+.name-logo {
+  font-size: large;
+  padding: 0 20px;
+}
+
+.link {
+  color: rgb(158, 158, 158);
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#nav-header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #181b1f;
+  margin: 0;
+  padding: 20px;
+  margin-left: -10px;
+}
+
+strong {
+  color: #c778dd;
+}
+
+img {
+  width: 100%;
+}
+
+#logo-photo {
+  width: 350px;
+  filter: grayscale();
+}
+
+.presentation {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.left-present {
+  width: 50%;
+  margin: 0;
+  padding: 100px;
+}
+
+.right-present {
+  width: 50%;
+  margin: 0;
+  padding: 100px;
+}
+
+#current {
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  display: block;
+  width: 350px;
+  padding: 7px;
+  padding-right: 25px;
+  padding-bottom: 12px;
+  border: 2px solid #c778dd;
+  background-color: #282c33;
+  top: -30px;
+  left: 50px;
+}
+
+i {
+  padding: 10px;
+  padding-right: 20px;
+  font-size: 22px;
+  margin: 0;
+}
+
+button {
+  border: 2px solid #c778dd;
+  background-color: #282c33;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: "fira code";
+}
+
+button:hover {
+  color: #282c33;
+  background-color: #c778dd;
+}
+
+#proyectosR {
+  display: flex;
+  max-width: 100%;
+  padding: 50px;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+#proyectosR article {
+  display: flex;
+  display: block;
+  border: 2px solid #c778dd;
+  background: #282c33;
+  color: white;
+  width: 300px;
+  height: 450px;
+  margin: 10px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+article footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181b1f;
+  height: 50px;
+}
+
+h4 {
+  font-size: large;
+}
+
+article h4,
+article p,
+article small {
+  text-align: left;
+  margin: 10px;
+}
+
+#qa {
+  display: flex;
+  max-width: 100%;
+  padding: 50px;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+#preguntas {
+  display: flex;
+  border-right: 1px solid #a2a2a2;
+  background: #282c33;
+  color: white;
+  width: 50%;
+  height: 450px;
+  margin: 10px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contacto {
+  display: flex;
+  background: #282c33;
+  color: white;
+  width: 50%;
+  height: 450px;
+  margin: 10px;
+  margin-bottom: 200px;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 0 20px;
+  align-items: center;
+}
+
+#contacto form {
+  width: 60%;
+  padding: 30px;
+}
+
+details summary {
+  box-sizing: border-box;
+  display: inline;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+details summary:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+details span {
+  background-color: #c778dd;
+  color: #181b1f;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline-block;
+}
+
+form div {
+  padding: 10px;
+}
+
+fieldset {
+  border: 2px solid #c778dd;
+  margin-bottom: 20px;
+}
+
+#footer-page {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #181b1f;
+  margin: 0;
+  padding: 20px;
+  margin-left: -10px;
+  height: 50px;
+}
+
+#footer-pagefooter span {
+  margin-right: 10px;
+  font-size: larger;
+}
+
+input {
+  color: #fff;
+  background-color: #282c33;
+  border: 2px solid #c778dd;
+  padding: 7px;
+  font-family: "Cascadia Code";
+  font-size: 14px;
+}
