@@ -5,8 +5,9 @@ body {
   font-family: "fira code";
   color: #fff;
   margin: 0;
-  margin-left: 10px;
+
   padding: 0;
+  scroll-padding-top: 100px;
 }
 
 .bold {
@@ -49,7 +50,8 @@ hr {
   background-color: #181b1f;
   margin: 0;
   padding: 20px;
-  margin-left: -10px;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 strong {
@@ -126,7 +128,6 @@ button:hover {
   display: flex;
   max-width: 100%;
   padding: 50px;
-  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
@@ -139,11 +140,12 @@ button:hover {
   background: #282c33;
   color: white;
   width: 300px;
-  height: 450px;
+  height: 80vh;
   margin: 10px;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 article footer {
@@ -151,7 +153,10 @@ article footer {
   justify-content: center;
   align-items: center;
   background-color: #181b1f;
-  height: 50px;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 h4 {
