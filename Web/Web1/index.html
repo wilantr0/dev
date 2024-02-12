@@ -1,90 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjetas</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="cards">
-
-        <!--CARD-->
-
-        <div class="card">
-            <div class="header">
-                <div class="date">24 de febrero</div>
-                <div class="title">Como funciona CSS</div>
-
-            </div>
-
-            <div class="footer">
-                <div class="autor">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="" alt="">
-                        <span>Marcos Rivas</span>
-                    </a>
-                </div>
-            </div>
+    <div id='form'>
+        <div id="intentos">
+            <p>Intentos:</p>
+            <p id="contador"></p>
         </div>
-
-        <!--CARD-->
-
-        <div class="card">
-            <div class="header">
-                <div class="date">24 de febrero</div>
-                <div class="title">Como funciona CSS</div>
-
-            </div>
-
-            <div class="footer">
-                <div class="autor">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="" alt="">
-                        <span>Marcos Rivas</span>
-                    </a>
-                </div>
-            </div>
+        <div>
+            <input onkeypress="enviar(event)" type="number" name="number" id="number" placeholder="Del 1 al 100"
+                max="10">
         </div>
-
-        <!--CARD-->
-
-        <div class="card">
-            <div class="header">
-                <div class="date">24 de febrero</div>
-                <div class="title">Como funciona CSS</div>
-
-            </div>
-
-            <div class="footer">
-                <div class="autor">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="" alt="">
-                        <span>Marcos Rivas</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!--CARD-->
-
-        <div class="card">
-            <div class="header">
-                <div class="date">24 de febrero</div>
-                <div class="title">Como funciona CSS</div>
-
-            </div>
-
-            <div class="footer">
-                <div class="autor">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="" alt="">
-                        <span>Marcos Rivas</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+        <p id="solucion"></p>
+        <button id="submit" onclick="send()">Adivinar</button>
+        </divform>
+        <script src="index.js"></script>
 </body>
+
 </html>

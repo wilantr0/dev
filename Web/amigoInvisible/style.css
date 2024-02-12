@@ -1,0 +1,96 @@
+* {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 40vh;
+  background-color: cornsilk;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#cont-selections {
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#añadir {
+  width: 80px;
+  height: 30px;
+  background-color: cornsilk;
+  border: 1px solid;
+}
+
+#añadir:active {
+  background-color: #333;
+  color: cornsilk;
+}
+
+.form-item {
+  margin: 15px 0;
+}
+
+h1 {
+  color: rgb(198, 203, 179);
+}
+
+h2 {
+  color: rgb(108, 111, 95);
+  padding: 0 30px;
+  text-align: center;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#correo {
+  margin-left: 15px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+textarea {
+  resize: none;
+}
+
+#close-window {
+  background-color: #b37575;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20%;
+  text-align: center;
+  padding: 10px 15px;
+  font-weight: bolder;
+  font-size: larger;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+}
